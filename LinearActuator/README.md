@@ -13,3 +13,8 @@ I made several changes suggested in the comments.
 Added handling of the limit switches to detect open and close.
 Added a start button to run open and close operation.
 
+### Forth
+Stepper and sliding words to run the linear actuator.
+Running on an ESP DevKit V1.0 and ESPForth 7.0.5
+
+
