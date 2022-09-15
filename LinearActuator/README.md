@@ -18,3 +18,7 @@ Stepper and sliding words to run the linear actuator.
 Running on an ESP DevKit V1.0 and ESPForth 7.0.5
 
 
+### vdhl
+Source code and test benches. 
+Running on Lattice iCEstick FPGA Evaluation Kit
+
