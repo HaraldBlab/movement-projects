@@ -14,3 +14,5 @@ I made several style related changes.
 ### Forth
 An implementation running on ESPForth32 V7.06
 
+### vhdl
+An implementation running on Lattice ICEStick
