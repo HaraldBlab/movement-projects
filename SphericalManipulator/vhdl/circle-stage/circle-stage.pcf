@@ -1,0 +1,7 @@
+set_io clk 21
+set_io rst_n 90 -pullup yes
+
+# leftmost header pin after 3v3 and GND
+set_io pwm[0] 112
+set_io pwm[1] 113
+set_io pwm[2] 114
