@@ -6,3 +6,6 @@ A 3D spherical platform driven by 3 servos.
 
 ## LinearActuator
 A linear actuator or sliding mechanism.
+
+## RobotChassis
+A 4WD car with Adafruit Motor Shield V1.
