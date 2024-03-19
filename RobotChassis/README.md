@@ -7,3 +7,6 @@ IRcontrolled Robot chassis supporting a Black controller and a DominatorControll
 ## DominatorController
 Dump, decodes and controls IR data of a DominatorController I got from a "Wheel climbing car".
 
+## obstacleAvoid
+Self driving Robot chassis using 3 ultrasonic sensors to detect obstacles.
+
