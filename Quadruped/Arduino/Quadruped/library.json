@@ -1,0 +1,20 @@
+{
+  "name": "Quadruped",
+  "keywords": "Robot",
+  "description": "Quadruped library for Arduino.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HaraldBlab/movement-projects/Quadruped"
+  },
+  "version": "1.0.0",
+  "exclude": "pictures",
+  "authors": {
+    "name": "Harald Blab",
+    "email": "Harald.Blab@gmail.com"
+  },
+  "license": "none",
+  "frameworks": "arduino",
+  "platforms": [
+    "atmelavr"
+  ]
+}
