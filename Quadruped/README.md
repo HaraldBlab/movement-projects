@@ -1,5 +1,5 @@
 # Quadruped
-Quaruped robot with 12 servo motors with a PWM controller.
+A Quadruped robot with 12 servo motors on a PWM controller.
  
 
 ## Model

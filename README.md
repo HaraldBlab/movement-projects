@@ -9,3 +9,7 @@ A linear actuator or sliding mechanism.
 
 ## RobotChassis
 A 4WD car with Adafruit Motor Shield V1.
+
+## Quadruped
+A Quadruped robot with 12 servo motors on a PWM controller.
+
