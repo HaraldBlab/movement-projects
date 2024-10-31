@@ -22,7 +22,7 @@ namespace left {
     namespace humerus_joint {
       uint8_t num = 1;
       uint16_t last_pos = 0;
-      uint16_t home_pos = 350; // 360 swinging, 350 almost no swinging
+      uint16_t home_pos = 340;
       void set_pos(uint16_t pos) {
         last_pos = move_to(num, last_pos, pos);
       }
@@ -64,7 +64,7 @@ namespace left {
     namespace humerus_joint {
       uint8_t num = 5;
       uint16_t last_pos = 0;
-      uint16_t home_pos = 450;
+      uint16_t home_pos = 440;  // was 450
       void set_pos(uint16_t pos) {
         last_pos = move_to(num, last_pos, pos);
       }
