@@ -53,10 +53,14 @@ pm = fly_front_pose();
 pe = fly_pose();
 */
 
-use <animate_walk.scad>
+//use <animate_walk.scad>
+//dp = walk_steps();
+//pt = walk_points();
 
-dp = walk_steps();
-pt = walk_points();
+use <animate_trot.scad>
+
+dp = trot_steps();
+pt = trot_points();
 
 function atback(i) = i<2?1.0:-1.0;
 
@@ -80,7 +84,7 @@ function linearn(i,n) =
     pt[floor($t*n)][i] + 
     dp[i+4*floor($t*n)]*($t-floor($t*n)/n)*n; 
 
-function interpolate(i) = linearn(i,14);
+function interpolate(i) = linearn(i,16);
 
 function ulna_rotate(pose,i) =
     animate 
