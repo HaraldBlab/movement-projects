@@ -1,66 +1,33 @@
 // robot_legs_rotation.scad
 // some (animatable) rotation calculation
-
-// TODO: move this to simulation file
-animate = true;
-
-/*
-function mount_pose() = [
-    [0,33,-67],
-    [0,33,-67],
-    [0,33,-67],
-    [0,33,-67]
-];
-function straight_pose() = [
-    [0,0,0],
-    [0,0,0],
-    [0,0,0],
-    [0,0,0]
-];
-function left_front_pose() = [
-    [10,-25,30],
-    [0,33,-67],
-    [0,33,-67],
-    [0,33,-67]
-];
-function left_back_pose() = [
-    [0,33,33],
-    [0,33,33],
-    [10,-40,-20],
-    [0,33,33]
-];
-function fly_front_pose() = [
-    [10,-40,0],
-    [10,-40,0],
-    [0,33,-67],
-    [0,33,-67]
-];
-function fly_back_pose() = [
-    [0,33,-67],
-    [0,33,-67],
-    [10,-40,0],
-    [10,-40,0]
-];
-function fly_pose() = [
-    [10,-40,0],
-    [10,-40,0],
-    [10,-40,0],
-    [10,-40,0]
-];
-
-ps = mount_pose();
-pm = fly_front_pose();
-pe = fly_pose();
-*/
-
-//use <animate_walk.scad>
-//dp = walk_steps();
-//pt = walk_points();
-
+//
+// simulation of the quadruped examples
+use <animate_walk.scad>
 use <animate_trot.scad>
+use <animate_pass.scad>
 
-dp = trot_steps();
-pt = trot_points();
+animate = true;
+animation = "pass";
+
+function animate_steps() =
+  (animation == "walk") ?
+    walk_steps() : 
+  (animation == "trot") ?
+    trot_steps() : 
+  pass_steps();
+
+function animate_points() =
+  (animation == "walk") ?
+    walk_points() : 
+  (animation == "trot") ?
+    trot_points() :
+  pass_points();
+
+dp = animate_steps();
+pt = animate_points();
+npoly = len(pt)-1;
+
+echo(degree=npoly);
 
 function atback(i) = i<2?1.0:-1.0;
 
@@ -84,7 +51,7 @@ function linearn(i,n) =
     pt[floor($t*n)][i] + 
     dp[i+4*floor($t*n)]*($t-floor($t*n)/n)*n; 
 
-function interpolate(i) = linearn(i,16);
+function interpolate(i) = linearn(i,npoly);
 
 function ulna_rotate(pose,i) =
     animate 

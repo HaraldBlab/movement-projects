@@ -1,5 +1,9 @@
 // animate_walk.scad
 // move pattern for walking robot
+// 1 - front left leg
+// 2 - back right leg
+// 3 - front right leg
+// 4 - back left leg
 
 elbow_offset = 10;  // PWM 30
 humerus_offset = 5; // PWM 15

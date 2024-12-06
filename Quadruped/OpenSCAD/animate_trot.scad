@@ -1,5 +1,9 @@
-// animate_walk.scad
-// move pattern for walking robot
+// animate_trot.scad
+// move pattern for troting robot
+// 1 - front left and back right sync
+// 2 - front right and back left sync
+// 3 - front left and back right sync
+// 4 - front right and back left sync
 
 elbow_offset = 10;  // PWM 30
 humerus_offset = 5; // PWM 15
@@ -130,3 +134,4 @@ function trot_points() =
 
 echo(trot_steps());
 echo(trot_points());
+echo("Size", len(trot_points()));
