@@ -6,9 +6,10 @@ use <animate_walk.scad>
 use <animate_trot.scad>
 use <animate_pass.scad>
 use <animate_hop.scad>
+use <animate_gallop.scad>
 
 animate = true;
-animation = "hop";
+animation = "gallop";
 
 function animate_steps() =
   (animation == "walk") ?
@@ -17,7 +18,9 @@ function animate_steps() =
     trot_steps() : 
   (animation == "pass") ?
     pass_steps() :
-  hop_steps();
+  (animation == "hop") ?
+    hop_steps() :
+  gallop_steps();
 
 function animate_points() =
   (animation == "walk") ?
@@ -26,7 +29,9 @@ function animate_points() =
     trot_points() :
   (animation == "pass") ?
     pass_points() : 
-  hop_points();
+  (animation == "hop") ?
+    hop_points() :
+  gallop_points();
 
 dp = animate_steps();
 pt = animate_points();
