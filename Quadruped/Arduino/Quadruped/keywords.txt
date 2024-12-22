@@ -1,0 +1,32 @@
+# Syntax Coloring Map For ExampleLibrary
+
+# Datatypes (KEYWORD1)
+Test	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+# quadruped_move.h
+start_smooth	KEYWORD2
+end_smooth	KEYWORD2
+start_sync	KEYWORD2
+execute_sync	KEYWORD2
+move_to	KEYWORD2
+# quadruped_home.h
+init	KEYWORD2
+set_pos	KEYWORD2
+home	KEYWORD2
+# quadruped_push.h
+swing_right	KEYWORD2
+swing_left	KEYWORD2
+swing_home	KEYWORD2
+shoulder	KEYWORD2
+# quadruped_walk.h
+step_forward	KEYWORD2
+move_body_forward	KEYWORD2
+move_body	KEYWORD2
+walk_left_right	KEYWORD2
+walk_right_left	KEYWORD2
+walk	KEYWORD2
+
+# Instances (KEYWORD2)
+
+# Constants (LITERAL1)
