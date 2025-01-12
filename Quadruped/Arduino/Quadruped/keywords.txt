@@ -26,6 +26,29 @@ move_body	KEYWORD2
 walk_left_right	KEYWORD2
 walk_right_left	KEYWORD2
 walk	KEYWORD2
+# quadruped_body.h
+move_left_right_forward	KEYWORD2
+move_right_left_forward	KEYWORD2
+move_left_forward	KEYWORD2
+move_right_forward	KEYWORD2
+move_forward	KEYWORD2
+# quadruped_legs.h
+step_left_right_forward	KEYWORD2
+step_right_left_forward	KEYWORD2
+step_left_forward	KEYWORD2
+step_right_forward	KEYWORD2
+step_front_forward	KEYWORD2
+step_back_forward	KEYWORD2
+# quadruped_trot.h
+trot	KEYWORD2
+# quadruped_pass.h
+pass_left	KEYWORD2
+pass_right	KEYWORD2
+# quadruped_hop.h
+hop	KEYWORD2
+# quadruped_gallop.h
+gallop_right	KEYWORD2
+gallop_left	KEYWORD2
 
 # Instances (KEYWORD2)
 

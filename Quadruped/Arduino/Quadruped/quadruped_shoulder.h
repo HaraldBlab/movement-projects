@@ -1,5 +1,5 @@
 /*
- * quadruped_shoulder.h - quaduped home positioning
+ * quadruped_shoulder.h - quaduped shoulder movement
  * 
  * Move the quadruped shoulders to make the quadruped swing left and right
  * 
